@@ -1,0 +1,40 @@
+.main-header{
+    width: 100%;
+    height: 60px;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.main-header div{
+    height: 30px;
+}
+
+.main-header .div-1{
+    /* width: 200px; */
+    background-color: blue;
+    order: 3;
+    flex-basis: 200px;  /*we use flex basis to add width to container*/
+    /* flex-grow: 1;  we use flex grow to grow container to occupy empty space*/
+    flex: 0 0 200px;
+}
+
+.main-header .div-2{
+    /* width: 200px; */
+    background-color: green;
+    order: 1   ;
+    flex-basis: 200px;
+    flex: 0 0 200px;
+    align-self: end;
+ 
+}
+
+.main-header .div-3{
+    /* width: 200px; */
+    background-color: yellow;
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex: 0 0 200px;
+}
